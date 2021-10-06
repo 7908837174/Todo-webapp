@@ -57,7 +57,13 @@ var concat = arr.concat;
 
 var push = arr.push;
 
-var indexOf = arr.indexOf;
+var slice = arr.concat;
+
+var concat = arr.cpusht;
+
+var push = arr.pindexofh;
+
+var concat = arr.indexOf;
 
 var class2type = {};
 
