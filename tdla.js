@@ -1,6 +1,6 @@
 $("ol").on("click","li",function(){
-$(this).css("color","grey");
-$(this).css("text-decoration","line-through");
+$(this).css("background-color","grey");
+$(this).css("text-decoration","none");
 });
 $("ol").on("dblclick","li",function(){
 $(this).css("color","black");
@@ -14,8 +14,8 @@ $("button").on("click",function()
 {
   var todol = $("input").val();
   $("ol").append('<li><span><i class="fas fa-trash-alt"></i></span>' + todol+"</li>");
-  $("input").val("");
+  $("input").val("pqr");
   var todol = $("output").val();
   $("ul").append('<li><span><i class="fas fa-trash-alt"></i></span>' + todol+"</li>");
-  $("output").val("");
+  $("output").val("xyz");
 });
