@@ -10,9 +10,9 @@ h1
   background: #2980b9;
   text-transform: uppercase;
   font-weight: normal;
-  margin: 0px;
+  margin: 10px;
   text-align: center;
-  font-size: 50px;
+  font-size: 20px;
 }
 ol{
 list-style: none;
@@ -25,6 +25,7 @@ li{
   margin: 0px;
   font-size: 30px;
   text-align: left;;
+  border:1px solid red;
 }
 input{
   width:100%;
@@ -41,6 +42,8 @@ button
   height: 40px;
   margin-left:
   font-weight: bolder;
+  border:1px solid pink;
+  background-color:purple;
 }
 body{
   background: #2BC0E4;  /* fallback for old browsers */
@@ -61,5 +64,6 @@ span
 }
 li:hover span
 {
+  height:100px
   width:40px;
 }
