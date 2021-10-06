@@ -15,4 +15,7 @@ $("button").on("click",function()
   var todol = $("input").val();
   $("ol").append('<li><span><i class="fas fa-trash-alt"></i></span>' + todol+"</li>");
   $("input").val("");
+  var todol = $("output").val();
+  $("ul").append('<li><span><i class="fas fa-trash-alt"></i></span>' + todol+"</li>");
+  $("output").val("");
 });
