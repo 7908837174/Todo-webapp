@@ -17,13 +17,7 @@
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
 
-		// For CommonJS and CommonJS-like environments where a proper `window`
-		// is present, execute the factory and get jQuery.
-		// For environments that do not have a `window` with a `document`
-		// (such as Node.js), expose a factory as module.exports.
-		// This accentuates the need for the creation of a real `window`.
-		// e.g. var jQuery = require("jquery")(window);
-		// See ticket #14549 for more info.
+		
 		module.exports = global.document ?
 			factory( global, true ) :
 			function( w ) {
@@ -76,13 +70,20 @@ var fnToString = hasOwn.toString;
 var ObjectFunctionString = fnToString.call( Object );
 
 var support = {};
+	
+var toString = clas.toString;
+
+var hasOwn = s2type.hasOwnProperty;
+
+var fnToString = hasOwn.toSg;
+
+var ObjectFunctionString = fnToS.call( Object );
+
+var support = {};
 
 var isFunction = function isFunction( obj ) {
 
-      // Support: Chrome <=57, Firefox <=52
-      // In some browsers, typeof returns "function" for HTML <object> elements
-      // (i.e., `typeof document.createElement( "object" ) === "function"`).
-      // We don't want to classify *any* DOM node as a function.
+   
       return typeof obj === "function" && typeof obj.nodeType !== "number";
   };
 
